@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Itim&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <title>Sarrygeez Portfolio</title>
+</head>
+<body>
+
+    <div onclick="goUp();" class="goUp"><i class='bx bx-chevrons-up'></i></div>
+
+    <div class="RealSide">
+        <div class="SidePane Shadow">
+            <header>
+                <section>
+                    <h1>Hello there 🤗</h1>
+                    <div class="socials">
+                        <a href="https://github.com/SarryGeezOwO"><i class='bx bxl-github'></i></a>
+                        <a href="https://x.com/CrotchHom"><i class='bx bxl-twitter'></i></a>
+                        <a href="#Nuh Uh"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                </section>
+                <p>
+                    I'm Cjay, and I'm an aspiring software developer. I strive to
+                    become a master at backend someday :)
+                </p>
+            </header>
+            <hr>
+
+            <nav>
+                <ul>
+                    <a href="#Home">Home</a>
+                    <a href="#Profile">Profile</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Blogs">Blogs</a>
+                    <a href="#About">About</a>
+                </ul>
+            </nav>
+
+            <hr><br>
+
+            <ul style="list-style-position: inside;" class="dateInfo">
+                <li id="date">Date: 8 / 10 / 2024</li>
+                <li id="time">Time: 10:20 PM</li>
+            </ul>
+
+            <br><hr><br>
+
+            <h3 style="margin-bottom: 10px;"><i class='bx bxs-pin' style="transform:translate(-2px, 3px);"></i>My pinned repositories:</h3>
+            <div class="repoList">
+                <div class="repo" onclick="openRepo('CodexPad');">
+                    <h3>CodexPad</h3>
+                    <p>JAVA</p>
+                </div>
+                <div class="repo" onclick="openRepo('Code_Journey');">
+                    <h3>Code_Journey</h3>
+                    <p>JAVA</p>
+                </div>
+                <div class="repo" onclick="openRepo('CFR_Parser');">
+                    <h3>CFR_Parser</h3>
+                    <p>JAVA</p>
+                </div>
+                <div class="repo" onclick="openRepo('FileManager');">
+                    <h3>FileManager</h3>
+                    <p>C#</p>
+                </div>
+            </div>
+
+            <br><br><hr>
+            <footer>
+                <p>©2024 SarryGeezOwO, All rights reserved.</p>
+                <br>
+                <p style="color:gray">for any issues, contact me at <span style="color:#6699FF;">srrymoo333@gmail.com</span></p>
+            </footer>
+        </div>
+
+        <button class="open-modal Shadow" onclick="openModal()"><i class='bx bxs-message-edit' style="transform:translate(-2px, 2px);"></i>Send me a message</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>Message me!</h3>
+                <form action="https://formsubmit.co/scottishman666@gmail.com" method="POST">
+                    <p>Name</p>
+                    <input type="text" name="name" required>
+
+                    <p>Message</p>
+                    <textarea name="message" rows="10" cols="50"></textarea>
+
+                    <input type="hidden" name="_subject" value="Received a new Message!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="MainPane">
+        <div class="Banner Shadow" id="banner"></div>
+        <div class="ContentPane Shadow" id="content">
+            <!-- Page Contents Goes Here -->
+
+            <section id="Home">
+                <h1><i class='bx bxs-home'></i> Home</h1>
+                <p>A Quick overview about myself</p>
+                <hr><br>
+                <p>
+                    I'm Cjay, I go by the name of SarryGeez when I browse through the internet.
+                    I enjoy a lot of things especially the piano, although I'm not very good at it yet...
+                </p>
+                <br>
+                <p>Here's a few details about me:</p>
+                <ul style="list-style-position: inside; margin-left:20px;">
+                    <li>I love waffles</li>
+                    <li>I love creating desktop applications</li>
+                    <li>I am a senior high student</li>
+                    <li>I play the piano</li>
+                </ul>
+            </section>
+
+            <section id="Profile">
+                <h1><i class='bx bxs-user-rectangle'></i> Profile</h1>
+                <p>Detailed information about me</p>
+                <hr><br>
+                <div class="profile-Header">
+                    <img src="./Images/nenePic.png">
+                    <div class="detail">
+                        <h1>── Cjay Gidayawan ──</h1>
+                        <p style="color:#555">SarryGeezOwO</p>
+                        <br>
+                        <p class="bio">
+                            An aspiring Software developer, Superbly interested in creating program using Java or Golang,
+                            worked on a few projects with the usage of Java and JSwing with the help of FlatLaf and MigLayout to
+                            create a outstanding applications and also, SQLite is my go-to Database of choice.
+                        </p>
+                    </div>
+                    <br>
+                    <h3>── Languages, Tools, and Software ──</h3>
+                    <div class="itemList">
+                        <div class="item">
+                            <i class='bx bxl-java'></i>
+                            <h4>JAVA</h4>
+                        </div>
+                        <div class="item">
+                            <i class='bx bxl-go-lang'></i>
+                            <h4>GO</h4>
+                        </div>
+                        <div class="item">
+                            <i class='bx bxs-coin-stack'></i>
+                            <h4>SQLite</h4>
+                        </div>
+                        <div class="item">
+                            <i class='bx bxl-spring-boot'></i>
+                            <h4>SpringBoot</h4>
+                        </div>
+                        <div class="item">
+                            <i class='bx bxl-windows'></i>
+                            <h4>Windows</h4>
+                        </div>
+                        <div class="item">
+                            <i class='bx bxl-git'></i>
+                            <h4>GIT</h4>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>── Achievements ──</h3>
+                    <div class="achieve-list">
+                        <div class="achieve">
+                            <i class='bx bxs-trophy' style="color: #FF5500;"></i>
+                            <div>
+                                <h4>3rd Placer</h4>
+                                <p>Codefest: An Annual Coding Competition Hosted by STI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <br>
+            <section id="Projects">
+                <h1><i class='bx bxs-briefcase'></i> Projects</h1>
+                <p>Few showcase of my Applications</p>
+                <hr><br>
+                <div class="project">
+                    <h2>CodexPad</h2>
+                    <p><strong>Description:</strong> A Java swing Notepad application that saves text file in realtime.</p>
+                    <img src="./Images/CodexPadSS.png" alt="Project Screenshot">
+                    <p><strong>Technologies Used:</strong> Java and Swing</p>
+                    <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
+                    <p><strong>Duration:</strong> March 2024 - April 2024</p>
+                    <p><strong>Challenges:</strong> Efficiently and swiftly handling the reading and writing of text files.</p>
+                    <p><strong>Results:</strong> Learned some techniques regarding about text file manipulation.</p>
+                    <a href="https://github.com/SarryGeezOwO/CodexPad">View Source Code</a>
+                </div>
+                <br>
+                <div class="project">
+                    <h2>CFR Parser</h2>
+                    <p><strong>Description:</strong> CFR (Configuration For Rascals) and CFR_Editor are Java libraries designed for parsing, reading, and modifying custom CFR configuration files.</p>
+                    <img src="./Images/CFR_ParserSS.png" alt="Project Screenshot">
+                    <p><strong>Technologies Used:</strong> Java, Swing, FlatLaf, Golang</p>
+                    <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
+                    <p><strong>Duration:</strong> July 2024 - Ongoing</p>
+                    <p><strong>Challenges:</strong> Parsing File and Storing parsed data to a mapped storage.</p>
+                    <p><strong>Results:</strong> . . . </p>
+                    <a href="https://github.com/SarryGeezOwO/CFR_Parser">View Source Code</a>
+                </div>
+                <br>
+                <div class="project">
+                    <h2>File Center</h2>
+                    <p><strong>Description:</strong> A file transfer application, where users can upload files through the server and users can download available files.</p>
+                    <img src="./Images/CodexPadSS.png" alt="Project Screenshot">
+                    <p><strong>Technologies Used:</strong> Java, Sockets, JavaFX</p>
+                    <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
+                    <p><strong>Duration:</strong> July 2024 - August 2024</p>
+                    <p><strong>Challenges:</strong> Transferring files effectively and storing file data efficiently.</p>
+                    <p><strong>Results:</strong> Server Handling many Request successfully.</p>
+                    <a href="https://github.com/SarryGeezOwO">(No Source Code) -- Private Repo...</a>
+                </div>
+
+            </section>
+            <br>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
