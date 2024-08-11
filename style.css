@@ -63,7 +63,7 @@ hr {
 /* Side Pane */
 .SidePane {
     border: 2px solid black;
-    min-width:400px;
+    max-width:500px;
     background-color:white;
     padding: 15px;
 }
@@ -81,10 +81,10 @@ hr {
     justify-content: space-between;
 }
 .SidePane header .socials {
+    margin-top: 5px;
     display: flex;
-    align-items: center;
     font-size: 30px;
-    gap: 10px;
+    gap: 5px;
 }
 .SidePane header .socials i {
     color: gray;
@@ -360,6 +360,15 @@ form button:hover {
 }
 
 
+
+.updateLog-list {
+    border: 2px solid black;
+    max-width:300px;
+    background-color:white;
+    padding: 15px;
+}
+
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   body {
@@ -373,7 +382,7 @@ form button:hover {
   }
   .SidePane {
     width:100%;
-    min-width: 10px;
+    max-width: 1000px;
   }
   .Banner {
     padding: 10px;
@@ -383,5 +392,9 @@ form button:hover {
   }
   .item {
     width:150px;
+  }
+
+  .updateLog-list {
+    max-width: 1000px;
   }
 }

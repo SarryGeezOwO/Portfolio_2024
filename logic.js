@@ -100,3 +100,18 @@ document.addEventListener('scroll', () => {
         scrollElement.classList.remove("enable");
     }
 });
+
+
+// Update Log rendering
+fetch('./Data/UpdateLog.json')
+  .then(response => response.json())
+  .then(data => {
+
+    data.forEach(log => {
+      const logEntry = document.createElement('div');
+      logEntry.innerHTML = `<h3>${log.date}</h3><p>${log.content}</p>`;
+      document.getElementById('update-log').appendChild(logEntry);
+    });
+
+  })
+  .catch(error => console.error('Error fetching the update log:', error));
