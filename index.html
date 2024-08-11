@@ -28,7 +28,7 @@
         <div class="SidePane Shadow">
             <header>
                 <section>
-                    <h1>Hello there 🤗</h1>
+                    <h1>Hello 🤗</h1>
                     <div class="socials">
                         <a href="https://github.com/SarryGeezOwO"><i class='bx bxl-github'></i></a>
                         <a href="https://x.com/CrotchHom"><i class='bx bxl-twitter'></i></a>
@@ -36,8 +36,8 @@
                     </div>
                 </section>
                 <p>
-                    I'm Cjay, and I'm an aspiring software developer. I strive to
-                    become a master at backend someday :)
+                    I'm <b>Cjay</b>, and I'm an aspiring software developer. I strive to
+                    become a master at backend someday
                 </p>
             </header>
             <hr>
@@ -123,8 +123,8 @@
                 <p>A Quick overview about myself</p>
                 <hr><br>
                 <p>
-                    I'm Cjay, I go by the name of SarryGeez when I browse through the internet.
-                    I enjoy a lot of things especially the piano, although I'm not very good at it yet...
+                    Hello, welcome to my website, this personal website of mine is to showcase
+                    my works and my journey towards being a master in backend development
                 </p>
                 <br>
                 <p>Here's a few details about me:</p>
@@ -200,53 +200,89 @@
                 <h1><i class='bx bxs-briefcase'></i> Projects</h1>
                 <p>Few showcase of my Applications</p>
                 <hr><br>
-                <div class="project">
-                    <h2>CodexPad</h2>
-                    <p><strong>Description:</strong> A Java swing Notepad application that saves text file in realtime.</p>
-                    <img src="./Images/CodexPadSS.png" alt="Project Screenshot">
-                    <p><strong>Technologies Used:</strong> Java and Swing</p>
-                    <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
-                    <p><strong>Duration:</strong> March 2024 - April 2024</p>
-                    <p><strong>Challenges:</strong> Efficiently and swiftly handling the reading and writing of text files.</p>
-                    <p><strong>Results:</strong> Learned some techniques regarding about text file manipulation.</p>
-                    <a href="https://github.com/SarryGeezOwO/CodexPad">View Source Code</a>
+                <div class="project" onclick="toggleProject(this);">
+                    <div class="selectable">
+                        <h2>CodexPad <span class="dropIcon"><i class='bx bx-chevron-down'></i></span></h2>
+                        <p><strong>Description:</strong> A Java swing Notepad application that saves text file in realtime.</p>
+                    </div>
+                    <div class="project-toggle show">
+                        <hr><br>
+                        <img src="./Images/CodexPadSS.png" alt="Project Screenshot">
+                        <p><strong>Technologies Used:</strong> Java and Swing</p>
+                        <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
+                        <p><strong>Duration:</strong> March 2024 - April 2024</p>
+                        <p><strong>Challenges:</strong> Efficiently and swiftly handling the reading and writing of text files.</p>
+                        <p><strong>Results:</strong> Learned some techniques regarding about text file manipulation.</p>
+                        <a href="https://github.com/SarryGeezOwO/CodexPad">View Source Code</a>
+                    </div>
                 </div>
                 <br>
-                <div class="project">
-                    <h2>CFR Parser</h2>
-                    <p><strong>Description:</strong> CFR (Configuration For Rascals) and CFR_Editor are Java libraries designed for parsing, reading, and modifying custom CFR configuration files.</p>
-                    <img src="./Images/CFR_ParserSS.png" alt="Project Screenshot">
-                    <p><strong>Technologies Used:</strong> Java, Swing, FlatLaf, Golang</p>
-                    <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
-                    <p><strong>Duration:</strong> July 2024 - Ongoing</p>
-                    <p><strong>Challenges:</strong> Parsing File and Storing parsed data to a mapped storage.</p>
-                    <p><strong>Results:</strong> . . . </p>
-                    <a href="https://github.com/SarryGeezOwO/CFR_Parser">View Source Code</a>
+                <div class="project" onclick="toggleProject(this);">
+                    <div class="selectable">
+                        <h2>CFR Parser <span class="dropIcon"><i class='bx bx-chevron-down'></i></span></h2>
+                        <p><strong>Description:</strong> CFR (Configuration For Rascals) and CFR_Editor are Java libraries designed for parsing, reading, and modifying custom CFR configuration files.</p>
+                    </div>
+                    <div class="project-toggle show">
+                        <hr><br>
+                        <img src="./Images/CFR_ParserSS.png" alt="Project Screenshot">
+                        <p><strong>Technologies Used:</strong> Java, Swing, FlatLaf, Golang</p>
+                        <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
+                        <p><strong>Duration:</strong> July 2024 - Ongoing</p>
+                        <p><strong>Challenges:</strong> Parsing File and Storing parsed data to a mapped storage.</p>
+                        <p><strong>Results:</strong> . . . </p>
+                        <a href="https://github.com/SarryGeezOwO/CFR_Parser">View Source Code</a>
+                    </div>
                 </div>
                 <br>
-                <div class="project">
-                    <h2>File Center</h2>
-                    <p><strong>Description:</strong> A file transfer application, where users can upload files through the server and users can download available files.</p>
-                    <img src="./Images/FileCenterSS.png" alt="Project Screenshot">
-                    <p><strong>Technologies Used:</strong> Java, Sockets, JavaFX</p>
-                    <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
-                    <p><strong>Duration:</strong> July 2024 - August 2024</p>
-                    <p><strong>Challenges:</strong> Transferring files effectively and storing file data efficiently.</p>
-                    <p><strong>Results:</strong> Server Handling many Request successfully.</p>
-                    <a href="https://github.com/SarryGeezOwO">(No Source Code) -- Private Repo...</a>
+                <div class="project" onclick="toggleProject(this);">
+                    <div class="selectable">
+                        <h2>File Center <span class="dropIcon"><i class='bx bx-chevron-down'></i></span></h2>
+                        <p><strong>Description:</strong> A file transfer application, where users can upload files through the server and users can download available files.</p>
+                    </div>
+                    <div class="project-toggle show">
+                        <hr><br>
+                        <img src="./Images/FileCenterSS.png" alt="Project Screenshot">
+                        <p><strong>Technologies Used:</strong> Java, Sockets, JavaFX</p>
+                        <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
+                        <p><strong>Duration:</strong> July 2024 - August 2024</p>
+                        <p><strong>Challenges:</strong> Transferring files effectively and storing file data efficiently.</p>
+                        <p><strong>Results:</strong> Server Handling many Request successfully.</p>
+                        <a href="https://github.com/SarryGeezOwO">(No Source Code) -- Private Repo...</a>
+                    </div>
                 </div>
 
             </section>
             <br>
+
+            <section id="About">
+                <h1><i class='bx bxs-info-square'></i> About</h1>
+                <p>Information regarding about the website and me</p>
+                <hr><br>
+                <div style="padding: 0 20px">
+                    <h3><i class='bx bxs-chevron-right'></i>About me</h3>
+                    <hr style="margin-bottom: 10px;">
+                    <p style="text-align:justify; padding-right:20px">
+                        I'm Cjay, the youngest in my family. I usually spend a lot of time on my own,
+                        and I only dive into programming projects when something really grabs my interest.
+                        I love getting curious and testing out my skills.
+                    </p>
+                    <br>
+                    <h3><i class='bx bxs-chevron-right'></i>About</h3>
+                    <hr style="margin-bottom: 10px;">
+                    <p style="text-align:justify; padding-right:20px">
+                        This website is to promote and showcase my projects, achievements, and details
+                        about me as a person.
+                    </p>
+                    <br>
+                </div>
+            </section>
         </div>
     </div>
 
     <div>
         <div class="updateLog-list Shadow" id="update-log">
-            <div class="update">
-                <h3></h3>
-                <p></p>
-            </div>
+            <h2>Update Log</h2>
+            <br>
         </div>
     </div>
 

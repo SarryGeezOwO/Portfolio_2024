@@ -101,6 +101,19 @@ document.addEventListener('scroll', () => {
     }
 });
 
+function toggleProject(element) {
+    const child = element.querySelector(".project-toggle");
+    child.classList.toggle("show");
+
+    const icon = element.querySelector(".dropIcon");
+    if(!child.classList.contains('show')) {
+        icon.innerHTML = `<i class='bx bx-chevron-up'></i>`;
+    }
+    else {
+        icon.innerHTML = `<i class='bx bx-chevron-down'></i>`;
+    }
+}
+
 
 // Update Log rendering
 fetch('./Data/UpdateLog.json')
@@ -109,7 +122,7 @@ fetch('./Data/UpdateLog.json')
 
     data.forEach(log => {
       const logEntry = document.createElement('div');
-      logEntry.innerHTML = `<h3>${log.date}</h3><p>${log.content}</p>`;
+      logEntry.innerHTML = `<div class="update"><h3>${log.date}</h3><p>${log.content}</p></div>`;
       document.getElementById('update-log').appendChild(logEntry);
     });
 

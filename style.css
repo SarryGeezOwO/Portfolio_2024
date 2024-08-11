@@ -235,10 +235,28 @@ hr {
     padding: 10px;
     border-radius:10px;
     background-color: #DFDFE1;
+    pointer-events:none;
+}
+.project .selectable, .project a {
+    pointer-events:auto;
 }
 .project img {
     width: 100%;
     border-radius:10px;
+}
+.project-toggle {
+    opacity: 1;
+    transition: 0.3s;
+    pointer-events:none;
+    max-height: 1000px;
+}
+.show {
+    opacity: 0;
+    max-height: 0;
+    pointer-events:none;
+}
+.dropIcon {
+    transform:translate(0, 10px);
 }
 
 
@@ -366,6 +384,14 @@ form button:hover {
     max-width:300px;
     background-color:white;
     padding: 15px;
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+}
+.update {
+    border: 1px solid black;
+    padding:10px;
+    background-color: #DFDFE1
 }
 
 
