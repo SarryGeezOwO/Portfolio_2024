@@ -80,8 +80,8 @@ function openRepo(name) {
     else if(name === "CFR_Parser") {
         window.open("https://github.com/SarryGeezOwO/CFR_Parser", "_blank");
     }
-    else if(name === "FileManager") {
-        window.open("https://github.com/SarryGeezOwO/FileManager", "_blank");
+    else if(name === "GoCmdTools") {
+        window.open("https://github.com/SarryGeezOwO/GoCmdTools", "_blank");
     }
 }
 

@@ -237,23 +237,25 @@ hr {
     background-color: #DFDFE1;
     pointer-events:none;
 }
+
 .project .selectable, .project a {
     pointer-events:auto;
 }
 .project img {
-    width: 100%;
+    max-width:100%;
+    max-height:100%;
     border-radius:10px;
+    outline: 1px dashed black;
 }
 .project-toggle {
     opacity: 1;
     transition: 0.3s;
     pointer-events:none;
-    max-height: 1000px;
 }
 .show {
     opacity: 0;
-    max-height: 0;
     pointer-events:none;
+    max-height:0px;
 }
 .dropIcon {
     transform:translate(0, 10px);

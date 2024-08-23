@@ -2,5 +2,13 @@
   {
     "date": "2024-08-10",
     "content": "The website is created, and released"
+  },
+  {
+    "date": "2024-08-19",
+    "content": "Fixed a visual bug regarding to the desktop view"
+  },
+  {
+    "date": "2024-08-22",
+    "content": "Project section updated and added an artwork category under the project section"
   }
 ]
