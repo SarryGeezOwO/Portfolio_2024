@@ -101,20 +101,6 @@ document.addEventListener('scroll', () => {
     }
 });
 
-function toggleProject(element) {
-    const child = element.querySelector(".project-toggle");
-    child.classList.toggle("show");
-
-    const icon = element.querySelector(".dropIcon");
-    if(!child.classList.contains('show')) {
-        icon.innerHTML = `<i class='bx bx-chevron-up'></i>`;
-    }
-    else {
-        icon.innerHTML = `<i class='bx bx-chevron-down'></i>`;
-    }
-}
-
-
 // Update Log rendering
 fetch('./Data/UpdateLog.json')
   .then(response => response.json())

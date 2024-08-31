@@ -21,6 +21,9 @@ hr {
 .Shadow {
     box-shadow: 10px 10px #15151a;
 }
+.MiniShadow {
+    box-shadow: 6px 6px #21212F;
+}
 
 .goUp {
     font-size: 40px;
@@ -63,7 +66,7 @@ hr {
 /* Side Pane */
 .SidePane {
     border: 2px solid black;
-    max-width:500px;
+    max-width: 500px;
     background-color:white;
     padding: 15px;
 }
@@ -190,7 +193,7 @@ hr {
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px 20px;
-    width:300px;
+    width:250px;
     color:white;
     transition: background-color 0.15s;
     user-select:none;
@@ -209,7 +212,7 @@ hr {
     display:flex;
     text-align: left;
     align-items:center;
-    width: 300px;
+    max-width: 300px;
     user-select:none;
 }
 .achieve i {
@@ -221,44 +224,53 @@ hr {
 .achieve div p {
     font-size: 14px;
     color: #505055;
+    padding-right: 5px;
 }
 .achieve:hover > *:first-child {
     transform:rotate(20deg);
     scale:1.2;
 }
 
+
+.project-wrapper {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:0px 20px;
+}
+.project-wrapper a {
+    color:#202026;
+    text-decoration: none;
+}
+.project:hover {
+    box-shadow: 6px 6px #21212F;
+    transform:translate(-10px, -10px);
+    background-color: rgb(190, 190, 200);
+}
 .project {
     display:flex;
     flex-direction:column;
     gap:5px;
-    border:1px solid black;
-    padding: 10px;
-    border-radius:10px;
     background-color: #DFDFE1;
-    pointer-events:none;
+    border: 1px solid black;
+    padding: 10px;
+    transition: 0.15s;
 }
-
-.project .selectable, .project a {
-    pointer-events:auto;
+.project .description {
+    font-size: 14px;
+    color: #505055;
 }
-.project img {
-    max-width:100%;
-    max-height:100%;
-    border-radius:10px;
-    outline: 1px dashed black;
+.project .techno-list {
+    display:flex;
+    gap:5px;
+    padding-top:5px;
 }
-.project-toggle {
-    opacity: 1;
-    transition: 0.3s;
-    pointer-events:none;
-}
-.show {
-    opacity: 0;
-    pointer-events:none;
-    max-height:0px;
-}
-.dropIcon {
-    transform:translate(0, 10px);
+.project .techno-list p {
+    background-color: #202025;
+    font-size: 13px;
+    padding:5px 15px;
+    border-radius:2px;
+    color: white;
 }
 
 
@@ -266,9 +278,9 @@ hr {
 
 .repoList {
     display:grid;
-    gap: 5px;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+    gap: 5px;
 }
 
 .repo {
@@ -419,7 +431,16 @@ form button:hover {
     max-height: 200px;
   }
   .item {
-    width:150px;
+    width:120px;
+  }
+
+  .project-wrapper {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .project .techno-list p {
+    font-size: 10px;
   }
 
   .updateLog-list {

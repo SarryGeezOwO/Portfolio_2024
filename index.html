@@ -76,7 +76,7 @@
                     <h3>CFR_Parser</h3>
                     <p>JAVA</p>
                 </div>
-                <div class="repo" onclick="openRepo('FileManager');">
+                <div class="repo" onclick="openRepo('GoCmdTools');">
                     <h3>GoCmdTools</h3>
                     <p>Go</p>
                 </div>
@@ -173,12 +173,16 @@
                             <h4>SpringBoot</h4>
                         </div>
                         <div class="item">
-                            <i class='bx bxl-windows'></i>
-                            <h4>Windows</h4>
+                            <i class='bx bxl-trello'></i>
+                            <h4>Trello</h4>
                         </div>
                         <div class="item">
                             <i class='bx bxl-git'></i>
                             <h4>GIT</h4>
+                        </div>
+                        <div class="item">
+                            <i class='bx bxl-figma'></i>
+                            <h4>Figma</h4>
                         </div>
                     </div>
                     <br>
@@ -201,57 +205,32 @@
                 <h1><i class='bx bxs-hard-hat'></i> Projects</h1>
                 <p>Few showcase of my Applications</p>
                 <hr><br>
-                <div class="project" onclick="toggleProject(this);">
-                    <div class="selectable">
-                        <h2>CodexPad <span class="dropIcon"><i class='bx bx-chevron-down'></i></span></h2>
-                        <p><strong>Description:</strong> A Java swing Notepad application that saves text file in realtime.</p>
-                    </div>
-                    <div class="project-toggle show">
-                        <hr><br>
-                        <img src="./Images/CodexPadSS.png" alt="Project Screenshot">
-                        <p><strong>Technologies Used:</strong> Java and Swing</p>
-                        <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
-                        <p><strong>Duration:</strong> March 2024 - April 2024</p>
-                        <p><strong>Challenges:</strong> Efficiently and swiftly handling the reading and writing of text files.</p>
-                        <p><strong>Results:</strong> Learned some techniques regarding about text file manipulation.</p>
-                        <a href="https://github.com/SarryGeezOwO/CodexPad">View Source Code</a>
-                    </div>
-                </div>
-                <br>
-                <div class="project" onclick="toggleProject(this);">
-                    <div class="selectable">
-                        <h2>CFR Parser <span class="dropIcon"><i class='bx bx-chevron-down'></i></span></h2>
-                        <p><strong>Description:</strong> CFR (Configuration For Rascals) and CFR_Editor are Java libraries designed for parsing, reading, and modifying custom CFR configuration files.</p>
-                    </div>
-                    <div class="project-toggle show">
-                        <hr><br>
-                        <img src="./Images/CFR_ParserSS.png" alt="Project Screenshot">
-                        <p><strong>Technologies Used:</strong> Java, Swing, FlatLaf, Golang</p>
-                        <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
-                        <p><strong>Duration:</strong> July 2024 - Ongoing</p>
-                        <p><strong>Challenges:</strong> Parsing File and Storing parsed data to a mapped storage.</p>
-                        <p><strong>Results:</strong> . . . </p>
-                        <a href="https://github.com/SarryGeezOwO/CFR_Parser">View Source Code</a>
-                    </div>
-                </div>
-                <br>
-                <div class="project" onclick="toggleProject(this);">
-                    <div class="selectable">
-                        <h2>File Center <span class="dropIcon"><i class='bx bx-chevron-down'></i></span></h2>
-                        <p><strong>Description:</strong> A file transfer application, where users can upload files through the server and users can download available files.</p>
-                    </div>
-                    <div class="project-toggle show">
-                        <hr><br>
-                        <img src="./Images/FileCenterSS.png" alt="Project Screenshot">
-                        <p><strong>Technologies Used:</strong> Java, Sockets, JavaFX</p>
-                        <p><strong>Role: </strong><span style="text-decoration:underline">Sole Developer</span> - Responsible for all aspects of the application, including design, development, and deployment</p>
-                        <p><strong>Duration:</strong> July 2024 - August 2024</p>
-                        <p><strong>Challenges:</strong> Transferring files effectively and storing file data efficiently.</p>
-                        <p><strong>Results:</strong> Server Handling many Request successfully.</p>
-                        <a href="https://github.com/SarryGeezOwO">(No Source Code) -- Private Repo...</a>
-                    </div>
-                </div>
+                <div class="project-wrapper">
+                    <a href="https://github.com/SarryGeezOwO/CodexPad">
+                        <div class="project">
+                            <h2>CodexPad</h2>
+                            <p class="description">A Java swing Notepad application that saves text file in realtime.</p>
+                            <br>
+                            <h4>Technologies used:</h4>
+                            <div class="techno-list">
+                                <p>Java</p>
+                                <p>Swing</p>
+                            </div>
+                        </div>
+                    </a>
 
+                    <div class="project">
+                        <h2>CFR Parser</h2>
+                        <p class="description">CFR(Configuration For Rascals) a java package for parsing and editing CFR files</p>
+                        <br>
+                        <h4>Technologies used:</h4>
+                        <div class="techno-list">
+                            <p>Java</p>
+                            <p>Go</p>
+                        </div>
+                    </div>
+
+                </div>
             </section>
             <br>
 
